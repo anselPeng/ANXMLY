@@ -10,13 +10,10 @@ import Foundation
 import Moya
 
 enum API{
-    case getHomeRecommend(parameters:[String:Any])
-    case getListenOneKey(parameters:[String:Any])
-
-    //case register(email:String,password:String)
-    //上传用户头像
+    case getHomeRecommend(parameters:[String:Any])//首页推荐接口
+    case getListenOneKey(parameters:[String:Any])//一键听接口
+    case getClassifyList(parameters:[String:Any])//首页分类接口
     case uploadHeadImage(parameters: [String:Any],imageDate:Data)
-//    case easyRequset
 }
 
 extension API:TargetType{
@@ -35,6 +32,8 @@ extension API:TargetType{
             return "/discovery-firstpage/v2/explore/ts-1532411485052"
         case .getListenOneKey:
             return "/radio-station/v1/subscribe-channel/list"
+        case .getClassifyList:
+                   return "/mobile/discovery/v5/categories/1532410996452?channel=ios-b1&code=43_310000_3100&device=iPhone&gender=9&version=6.5.3%20HTTP/1.1"
             
         case .uploadHeadImage( _, _):
             return ""
@@ -61,6 +60,9 @@ extension API:TargetType{
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         case let .getListenOneKey(parameters):
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case let .getClassifyList(parameters):
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        
         //图片上传
         case .uploadHeadImage(let parameters, let imageDate):
             ///name 和fileName 看后台怎么说，   mineType根据文件类型上百度查对应的mineType
