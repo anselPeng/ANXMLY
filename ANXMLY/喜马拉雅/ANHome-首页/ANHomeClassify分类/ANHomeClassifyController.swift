@@ -13,6 +13,7 @@ class ANHomeClassifyController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let bb  = ""
         // Do any additional setup after loading the view.
     }
     
