@@ -1,0 +1,82 @@
+PODS:
+  - Alamofire (4.9.1)
+  - DNSPageView (1.2.1)
+  - ESTabBarController-swift (2.7)
+  - FSPagerView (0.8.3)
+  - HandyJSON (5.0.1)
+  - JXMarqueeView (0.0.8)
+  - Kingfisher (5.12.0):
+    - Kingfisher/Core (= 5.12.0)
+  - Kingfisher/Core (5.12.0)
+  - LTScrollView (0.2.1)
+  - MJRefresh (3.3.1)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Result (4.1.0)
+  - SnapKit (5.0.1)
+  - StreamingKit (0.1.30)
+  - SVProgressHUD (2.2.5)
+  - SwiftMessages (7.0.1):
+    - SwiftMessages/App (= 7.0.1)
+  - SwiftMessages/App (7.0.1)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - DNSPageView
+  - ESTabBarController-swift
+  - FSPagerView
+  - HandyJSON (~> 5.0.1)
+  - JXMarqueeView
+  - Kingfisher
+  - LTScrollView
+  - MJRefresh
+  - Moya
+  - SnapKit
+  - StreamingKit
+  - SVProgressHUD
+  - SwiftMessages
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - DNSPageView
+    - ESTabBarController-swift
+    - FSPagerView
+    - HandyJSON
+    - JXMarqueeView
+    - Kingfisher
+    - LTScrollView
+    - MJRefresh
+    - Moya
+    - Result
+    - SnapKit
+    - StreamingKit
+    - SVProgressHUD
+    - SwiftMessages
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  DNSPageView: 1a1972df33a08dbad8e43188da97b31997e1d109
+  ESTabBarController-swift: 4fb52ad03d94d0717ef97bc9eb09a5abfdded0a2
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
+  JXMarqueeView: dfb4eadb1bf7245c9b41706e907c889fbf53c2dc
+  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
+  LTScrollView: 93fff4aed9f9545f541a99b320b27808f5307c12
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  StreamingKit: 70ca8608c206864b4d54a577eacb3c8bf7c72209
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 44e4936eccac29a1410c33c33231da2df5b0098b
+
+COCOAPODS: 1.8.3
