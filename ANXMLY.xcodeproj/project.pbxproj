@@ -52,6 +52,9 @@
 		87308FE823AA23A400F94EA9 /* ANHomeVIPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87308FE723AA23A400F94EA9 /* ANHomeVIPController.swift */; };
 		87308FEA23AA23BA00F94EA9 /* ANHomeLiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87308FE923AA23BA00F94EA9 /* ANHomeLiveController.swift */; };
 		87308FEC23AA23EA00F94EA9 /* ANHomeBoardCastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87308FEB23AA23EA00F94EA9 /* ANHomeBoardCastController.swift */; };
+		873208BD23BB2DD2008DAA87 /* ANVipFocusImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873208BC23BB2DD2008DAA87 /* ANVipFocusImagesModel.swift */; };
+		873208BF23BB405F008DAA87 /* ANVipHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873208BE23BB405E008DAA87 /* ANVipHeaderView.swift */; };
+		873208C123BB47A0008DAA87 /* ANIconsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873208C023BB47A0008DAA87 /* ANIconsTableCell.swift */; };
 		8732684923B1A90D00E2E803 /* String+ANTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8732684823B1A90D00E2E803 /* String+ANTool.swift */; };
 		87366BCC23B4634E001CB1D9 /* ANFindAttentionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87366BCB23B4634E001CB1D9 /* ANFindAttentionController.swift */; };
 		87366BCE23B46364001CB1D9 /* ANFindRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87366BCD23B46364001CB1D9 /* ANFindRecommendController.swift */; };
@@ -140,6 +143,9 @@
 		87308FE723AA23A400F94EA9 /* ANHomeVIPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANHomeVIPController.swift; sourceTree = "<group>"; };
 		87308FE923AA23BA00F94EA9 /* ANHomeLiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANHomeLiveController.swift; sourceTree = "<group>"; };
 		87308FEB23AA23EA00F94EA9 /* ANHomeBoardCastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANHomeBoardCastController.swift; sourceTree = "<group>"; };
+		873208BC23BB2DD2008DAA87 /* ANVipFocusImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANVipFocusImagesModel.swift; sourceTree = "<group>"; };
+		873208BE23BB405E008DAA87 /* ANVipHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANVipHeaderView.swift; sourceTree = "<group>"; };
+		873208C023BB47A0008DAA87 /* ANIconsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANIconsTableCell.swift; sourceTree = "<group>"; };
 		8732684823B1A90D00E2E803 /* String+ANTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ANTool.swift"; sourceTree = "<group>"; };
 		87366BCB23B4634E001CB1D9 /* ANFindAttentionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFindAttentionController.swift; sourceTree = "<group>"; };
 		87366BCD23B46364001CB1D9 /* ANFindRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFindRecommendController.swift; sourceTree = "<group>"; };
@@ -360,6 +366,8 @@
 		87308FDE23AA227700F94EA9 /* ANHomeVIP */ = {
 			isa = PBXGroup;
 			children = (
+				873208BB23BB2D7E008DAA87 /* View */,
+				873208BA23BB2D72008DAA87 /* Model */,
 				87308FE723AA23A400F94EA9 /* ANHomeVIPController.swift */,
 			);
 			path = ANHomeVIP;
@@ -379,6 +387,23 @@
 				87308FEB23AA23EA00F94EA9 /* ANHomeBoardCastController.swift */,
 			);
 			path = "ANHomeBroadcast广播";
+			sourceTree = "<group>";
+		};
+		873208BA23BB2D72008DAA87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				873208BC23BB2DD2008DAA87 /* ANVipFocusImagesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		873208BB23BB2D7E008DAA87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				873208BE23BB405E008DAA87 /* ANVipHeaderView.swift */,
+				873208C023BB47A0008DAA87 /* ANIconsTableCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8732684723B1A3A200E2E803 /* Tools */ = {
@@ -736,9 +761,11 @@
 				872AE26523B30FBD00D72A63 /* ANListenHeaderView.swift in Sources */,
 				87366BE223B4B3EB001CB1D9 /* ANImagCollCell.swift in Sources */,
 				87304B5623AB6A3800DA5F4C /* NetworkManager.swift in Sources */,
+				873208C123BB47A0008DAA87 /* ANIconsTableCell.swift in Sources */,
 				87308FEC23AA23EA00F94EA9 /* ANHomeBoardCastController.swift in Sources */,
 				8738F8CB23A8C82900A67D41 /* ANMineIconsCell.swift in Sources */,
 				872AE26123B2EDC700D72A63 /* ANListenOneKeyController.swift in Sources */,
+				873208BD23BB2DD2008DAA87 /* ANVipFocusImagesModel.swift in Sources */,
 				87799B3C23B6F87800D1AD52 /* ANFindDubCell.swift in Sources */,
 				8727206E23A71004005D2B90 /* SceneDelegate.swift in Sources */,
 				8738F8C923A8C6D200A67D41 /* ANIconTitleModel.swift in Sources */,
@@ -749,6 +776,7 @@
 				872AE26723B3425000D72A63 /* ANListenHeaderItemView.swift in Sources */,
 				87366BCE23B46364001CB1D9 /* ANFindRecommendController.swift in Sources */,
 				87366BDE23B4A699001CB1D9 /* ANFindAttentionModel.swift in Sources */,
+				873208BF23BB405F008DAA87 /* ANVipHeaderView.swift in Sources */,
 				8709C15123B9E05600A2CDE9 /* ANLikeHeader.swift in Sources */,
 				87308FE823AA23A400F94EA9 /* ANHomeVIPController.swift in Sources */,
 				87308FD723A9B8C900F94EA9 /* ANMineVipView.swift in Sources */,

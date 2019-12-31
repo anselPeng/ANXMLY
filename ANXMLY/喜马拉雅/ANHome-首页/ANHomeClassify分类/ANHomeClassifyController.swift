@@ -16,7 +16,6 @@ class ANHomeClassifyController: UIViewController {
                collectionView.reloadData()
            }
        }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = FooterViewColor
@@ -40,8 +39,7 @@ class ANHomeClassifyController: UIViewController {
         lazy var collectionView:UICollectionView = {
             let layout = UICollectionViewFlowLayout()
                //  layout.scrollDirection = .horizontal
-                 layout.itemSize = CGSize.init(width: (YYScreenWidth - 10 )/3.0, height: 40)
-                 layout.sectionInset = UIEdgeInsets.init(top: 5, left: 10, bottom: 5, right: -10)
+                 layout.sectionInset = UIEdgeInsets.init(top: 5, left: 10, bottom: 5, right: 5)
             layout.minimumInteritemSpacing = 2.0
             layout.minimumLineSpacing = 2.0
                  let collectionView = UICollectionView.init(frame: CGRect.zero, collectionViewLayout: layout)
@@ -94,15 +92,14 @@ extension ANHomeClassifyController:UICollectionViewDataSource,UICollectionViewDe
             return cell
         }
         
-        
-        
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let item = dataArray![indexPath.section]
         if item.displayStyleType == 0{
-                return CGSize.init(width: (YYScreenWidth - 10 )/4.0, height: 40)
+                return CGSize.init(width: (YYScreenWidth - 22 )/4.0, height: 40)
               }
               
-     return   CGSize.init(width: (YYScreenWidth - 8 )/3.0, height: 40)
+     return   CGSize.init(width: (YYScreenWidth - 20 )/3.0, height: 40)
     }
     
         

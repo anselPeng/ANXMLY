@@ -18,7 +18,6 @@ let RESULT_MESSAGE = "message"  //错误消息提示
 let Moya_Baseparameters = [
             "device":"iPhone",
             "appid":0,
-            "categoryId":-2,
             "channel":"ios-b1",
             "code":"43_310000_3100",
             "network":"WIFI",

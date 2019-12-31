@@ -13,6 +13,7 @@ enum API{
     case getHomeRecommend(parameters:[String:Any])//首页推荐接口
     case getListenOneKey(parameters:[String:Any])//一键听接口
     case getClassifyList(parameters:[String:Any])//首页分类接口
+    case getHomeVipList(parameters:[String:Any])//首页VIP接口
     case uploadHeadImage(parameters: [String:Any],imageDate:Data)
 }
 
@@ -33,8 +34,10 @@ extension API:TargetType{
         case .getListenOneKey:
             return "/radio-station/v1/subscribe-channel/list"
         case .getClassifyList:
-                   return "/mobile/discovery/v5/categories/1532410996452?channel=ios-b1&code=43_310000_3100&device=iPhone&gender=9&version=6.5.3%20HTTP/1.1"
-            
+                   return "/mobile/discovery/v5/categories/1532410996452"
+        case .getHomeVipList:
+                         return "/product/v4/category/recommends/ts-1532592638951"
+                  
         case .uploadHeadImage( _, _):
             return ""
         }
@@ -62,7 +65,9 @@ extension API:TargetType{
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         case let .getClassifyList(parameters):
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
-        
+        case let .getHomeVipList(parameters):
+        return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+            
         //图片上传
         case .uploadHeadImage(let parameters, let imageDate):
             ///name 和fileName 看后台怎么说，   mineType根据文件类型上百度查对应的mineType
