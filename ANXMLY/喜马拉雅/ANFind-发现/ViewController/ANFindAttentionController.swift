@@ -2,8 +2,8 @@
 //  ANFindAttentionController.swift
 //  ANXMLY
 //
-//  Created by 华盛 on 2019/12/26.
-//  Copyright © 2019 华盛. All rights reserved.
+//  Created by Ansel on 2019/12/26.
+//  Copyright © 2019 Ansel. All rights reserved.
 //
 
 import UIKit
@@ -28,7 +28,8 @@ class ANFindAttentionController: UIViewController {
         self.view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
             make.top.equalTo(50)
-            make.left.right.bottom.equalTo(0)
+            make.left.right.equalTo(0)
+            make.bottom.equalTo(-50)
         }
          glt_scrollView = tableView
         loadData()

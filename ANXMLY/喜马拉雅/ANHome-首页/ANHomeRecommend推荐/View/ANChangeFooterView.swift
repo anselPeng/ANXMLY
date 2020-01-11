@@ -3,7 +3,7 @@
 //  ANXMLY
 //
 //  Created by 彭安忠 on 2019/12/18.
-//  Copyright © 2019 华盛. All rights reserved.
+//  Copyright © 2019 Ansel. All rights reserved.
 //
 
 import UIKit

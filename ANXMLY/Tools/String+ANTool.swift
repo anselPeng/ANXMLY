@@ -2,8 +2,8 @@
 //  String+ANTool.swift
 //  ANXMLY
 //
-//  Created by 华盛 on 2019/12/24.
-//  Copyright © 2019 华盛. All rights reserved.
+//  Created by Ansel on 2019/12/24.
+//  Copyright © 2019 Ansel. All rights reserved.
 //
 
 import Foundation

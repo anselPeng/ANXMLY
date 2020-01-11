@@ -2,8 +2,8 @@
 //  ANHomeLiveColCell.swift
 //  ANXMLY
 //
-//  Created by 华盛 on 2019/12/24.
-//  Copyright © 2019 华盛. All rights reserved.
+//  Created by Ansel on 2019/12/24.
+//  Copyright © 2019 Ansel. All rights reserved.
 //
 
 import UIKit
@@ -51,9 +51,12 @@ class ANHomeLiveColCell: UICollectionViewCell {
             imageView.layer.cornerRadius = 5.0
             imageView.snp.makeConstraints { (make) in
                 //make.top.right.left.equalTo(0)
-                make.centerX.equalTo(self.snp_centerXWithinMargins)
-                make.height.width.equalTo(100)
-                make.bottom.equalTo(titleLb.snp_topMargin).offset(-10)
+               // make.centerX.equalTo(self.snp_centerXWithinMargins)
+                make.left.equalTo(5)
+                make.right.equalTo(-5)
+                make.top.equalTo(5)
+                make.height.equalTo(self.snp.width).offset(-10)
+             //   make.bottom.equalTo(titleLb.snp_topMargin).offset(-10)
             }
             self.addSubview(tipLb)
             tipLb.backgroundColor = .orange
@@ -70,7 +73,12 @@ class ANHomeLiveColCell: UICollectionViewCell {
             }
             
             self.imageView.addSubview(palyAnimalView)
-            
+            self.palyAnimalView.snp.makeConstraints { (make) in
+                          make.left.equalTo(imageView).offset(5)
+                          make.bottom.equalTo(imageView).offset(-5)
+                          make.width.equalTo(2)
+                          make.height.equalTo(30)
+                      }
             //palyAnimalView.backgroundColor = .black
         }
         

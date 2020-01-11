@@ -2,8 +2,8 @@
 //  ANHomeClassifyController.swift
 //  ANXMLY
 //
-//  Created by 华盛 on 2019/12/18.
-//  Copyright © 2019 华盛. All rights reserved.
+//  Created by Ansel on 2019/12/18.
+//  Copyright © 2019 Ansel. All rights reserved.
 //
 
 import UIKit
@@ -26,6 +26,8 @@ class ANHomeClassifyController: UIViewController {
 
     func loadData() {
     let param = Moya_Baseparameters
+        
+        
         NetWorkRequest(.getClassifyList(parameters: param)) { (result) -> (Void) in
             print(result)
             let json = JSON.init(parseJSON: result)

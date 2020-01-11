@@ -2,8 +2,8 @@
 //  ANFindRecommendController.swift
 //  ANXMLY
 //
-//  Created by 华盛 on 2019/12/26.
-//  Copyright © 2019 华盛. All rights reserved.
+//  Created by Ansel on 2019/12/26.
+//  Copyright © 2019 Ansel. All rights reserved.
 //
 
 import UIKit
@@ -32,7 +32,8 @@ class ANFindRecommendController: UIViewController {
              glt_scrollView = tableView
             tableView.snp.makeConstraints { (make) in
                 make.top.equalTo(50)
-                make.left.right.bottom.equalTo(0)
+                make.left.right.equalTo(0)
+                make.bottom.equalTo(-50)
             }
             loadData()
             // Do any additional setup after loading the view.

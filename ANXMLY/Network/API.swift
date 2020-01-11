@@ -14,14 +14,22 @@ enum API{
     case getListenOneKey(parameters:[String:Any])//一键听接口
     case getClassifyList(parameters:[String:Any])//首页分类接口
     case getHomeVipList(parameters:[String:Any])//首页VIP接口
+    case getHomeLiveList(parameters:[String:Any])//首页直播接口
+    case getHomeLiveClassifyList(parameters:[String:Any])//首页直播分类接口
+    case getHomeLiveBanaList(parameters:[String:Any])//首页直播轮播接口
+    case getHomeLiveRankList(parameters:[String:Any])//首页直播排名接口
+    case getHomeLiveItemList(parameters:[String:Any])//首页直播直播间接口
+    
     case uploadHeadImage(parameters: [String:Any],imageDate:Data)
 }
 
 extension API:TargetType{
     var baseURL: URL {
         switch self {
-      //  case .easyRequset:
-        //    return URL.init(string:"http://news-at.zhihu.com/api/")!
+        case .getHomeLiveBanaList:
+            return URL(string: "http://adse.ximalaya.com")!
+      //  case .getHomeLiveItemList:
+        //    return URL(string: "http://mobwsa.ximalaya.com")!
         default:
             return URL.init(string:(Moya_baseURL))!
         }
@@ -34,10 +42,19 @@ extension API:TargetType{
         case .getListenOneKey:
             return "/radio-station/v1/subscribe-channel/list"
         case .getClassifyList:
-                   return "/mobile/discovery/v5/categories/1532410996452"
+            return "/mobile/discovery/v5/categories/1532410996452"
         case .getHomeVipList:
-                         return "/product/v4/category/recommends/ts-1532592638951"
-                  
+            return "/product/v4/category/recommends/ts-1532592638951"
+        case .getHomeLiveList:
+            return "/lamia/v8/live/homepage"
+        case .getHomeLiveClassifyList:
+            return "/lamia/v1/homepage/materials"
+        case .getHomeLiveBanaList:
+            return "/focusPicture/ts-1532427241140"
+        case .getHomeLiveRankList:
+            return "/lamia/v2/live/rank_list"
+        case .getHomeLiveItemList:
+            return "/lamia/v9/live/homepage"
         case .uploadHeadImage( _, _):
             return ""
         }
@@ -66,8 +83,19 @@ extension API:TargetType{
         case let .getClassifyList(parameters):
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         case let .getHomeVipList(parameters):
-        return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
-            
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case let .getHomeLiveList(parameters):
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case let .getHomeLiveClassifyList(parameters):
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case let .getHomeLiveBanaList(parameters):
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case let .getHomeLiveItemList(parameters):
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+        case let .getHomeLiveRankList(parameters):
+                return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+
+                
         //图片上传
         case .uploadHeadImage(let parameters, let imageDate):
             ///name 和fileName 看后台怎么说，   mineType根据文件类型上百度查对应的mineType

@@ -27,9 +27,7 @@ class ANListenController: UIViewController {
     }()
     
     private func managerReact() -> CGRect {
-
-        let statusBarH = UIApplication.shared.statusBarFrame.size.height
-        let Y: CGFloat = statusBarH + 44
+        let Y: CGFloat =   44
         let H: CGFloat = isFullScreen ? (view.bounds.height - Y - 34) : view.bounds.height - Y
         return CGRect(x: 0, y: Y, width: view.bounds.width, height: H)
     }

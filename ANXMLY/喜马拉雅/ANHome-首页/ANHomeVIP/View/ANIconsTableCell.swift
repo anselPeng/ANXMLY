@@ -2,8 +2,8 @@
 //  ANIconsTableCell.swift
 //  ANXMLY
 //
-//  Created by 华盛 on 2019/12/31.
-//  Copyright © 2019 华盛. All rights reserved.
+//  Created by Ansel on 2019/12/31.
+//  Copyright © 2019 Ansel. All rights reserved.
 //
 
 import UIKit
@@ -52,7 +52,7 @@ class ANIconsTableCell: UITableViewCell {
             make.top.left.right.equalTo(0)
             make.bottom.equalTo(0)
         }
-        //self.backgroundColor = FooterViewColor
+    
     }
     
 }
